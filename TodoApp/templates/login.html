@@ -1,0 +1,82 @@
+{% include 'layout.html' %}
+
+<div class="container">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6 col-lg-5">
+
+            <div class="card shadow mt-5">
+
+                <div class="card-body p-4">
+
+                    <h2 class="text-center mb-4">
+                        Login
+                    </h2>
+
+                    <form id="loginForm">
+
+                        <!-- Username -->
+                        <div class="form-group">
+
+                            <label for="username">
+                                Username
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="username"
+                                name="username"
+                                placeholder="Enter your username"
+                            >
+
+                        </div>
+
+
+                        <!-- Password -->
+                        <div class="form-group">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                class="form-control"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                            >
+
+                        </div>
+
+
+                        <!-- Submit Button -->
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-block"
+                        >
+                            Login
+                        </button>
+
+
+                        <!-- Register -->
+                        <div class="text-center mt-3">
+
+                            <a href="/auth/register-page"> Create a new account </a>
+
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

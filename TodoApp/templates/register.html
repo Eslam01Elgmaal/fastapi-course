@@ -1,0 +1,196 @@
+{% include 'layout.html' %}
+
+<div class="container">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-8 col-lg-6">
+
+            <div class="card shadow mt-5 mb-5">
+
+                <div class="card-body p-4">
+
+                    <h2 class="text-center mb-4">
+                        Create Account
+                    </h2>
+
+                    <form id="registerForm">
+
+                        <!-- Username -->
+                        <div class="form-group">
+
+                            <label>
+                                Username
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+
+                                name="username"
+                                placeholder="Enter your username"
+                            >
+
+                        </div>
+
+
+                        <!-- First & Last Name -->
+                        <div class="form-row">
+
+                            <!-- First Name -->
+                            <div class="form-group col-md-6">
+
+                                <label>
+                                    First Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+
+                                    name="firstname"
+                                    placeholder="First name"
+                                >
+
+                            </div>
+
+
+                            <!-- Last Name -->
+                            <div class="form-group col-md-6">
+
+                                <label>
+                                    Last Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+
+                                    name="lastname"
+                                    placeholder="Last name"
+                                >
+
+                            </div>
+
+
+                            <!-- Role -->
+                            <div class="form-group col-md-6">
+
+                                <label>
+                                    Role
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+
+                                    name="role"
+                                    placeholder="Role"
+                                >
+
+                            </div>
+
+
+                            <!-- Phone Number -->
+                            <div class="form-group col-md-6">
+
+                                <label>
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+
+                                    name="phone_number"
+                                    placeholder="P/N"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="form-group">
+
+                            <label>
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+
+                                name="email"
+                                placeholder="Enter your email"
+                            >
+
+                        </div>
+
+
+                        <!-- Password -->
+                        <div class="form-group">
+
+                            <label>
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                class="form-control"
+
+                                name="password"
+                                placeholder="Enter your password"
+                            >
+
+                        </div>
+
+
+                        <!-- Verify Password -->
+                        <div class="form-group">
+
+                            <label>
+                                Verify Password
+                            </label>
+
+                            <input
+                                type="password"
+                                class="form-control"
+
+                                name="verify_password"
+                                placeholder="Verify your password"
+                            >
+
+                        </div>
+
+
+                        <!-- Submit Button -->
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-block"
+                        >
+                            Register
+                        </button>
+
+
+                        <!-- Back to Login -->
+                        <div class="text-center mt-3">
+
+                            <a href="/auth/login-page">
+                                Already have an account?
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

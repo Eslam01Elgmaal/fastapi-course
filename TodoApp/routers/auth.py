@@ -104,12 +104,11 @@ async def create_user(db:db_dependency,create_user_request: CreateUserRequest):
         first_name = create_user_request.first_name,
         last_name = create_user_request.last_name,
         hashed_password = bcrypt_context.hash(create_user_request.password),
-        role = create_user_request.role,
+        # role = create_user_request.role,
         is_active = True
     )
     db.add(create_user_request)
     db.commit()
-    return {"SuccessFull"}
 
 
 @router.post("/token", response_model=Token)

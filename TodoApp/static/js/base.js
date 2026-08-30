@@ -205,7 +205,7 @@
                 } else {
                     // Handle error
                     const errorData = await response.json();
-                    alert(`Error: ${errorData.message}`);
+                    alert(`Error: ${errorData.detail}`);
                 }
             } catch (error) {
                 console.error('Error:', error);
